@@ -104,10 +104,7 @@ resource "aws_iam_role" "main" {
             "s3:DeleteObjectVersion",
             "s3:DeleteObject"
           ],
-          "Resource" : [
-            "arn:aws:s3:::learn-devops-with-terraform/misc/prometheus-alert-rules/*",
-            "arn:aws:s3:::learn-devops-with-terraform/misc/prometheus-alert-rules"
-          ]
+          "Resource" : "*"
         }
       ]
     })
